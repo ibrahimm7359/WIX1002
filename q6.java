@@ -1,26 +1,14 @@
-package Tutorial1;
-
-import java.util.Random;
-
+import java.util.Scanner;
 public class q6 {
     public static void main(String[] args) {
-        Random rand = new Random();
+        Scanner input = new Scanner(System.in);
 
-        int num = rand.nextInt(101);
-        System.out.println("Numbers: " + num);
-        int min = num;
+        System.out.print("Enter the diameter: ");
+        double diameter = input.nextDouble();
 
-        for (int counter = 1; counter < 10; counter++) {
-            num = rand.nextInt(101); 
-            System.out.print(" " + num);
-            if (num < min) {
-                min = num;
-            }
-        }
+        double circumference = Math.PI * diameter;
 
-        System.out.println();
-        System.out.println("Minimum: " + min);
-
-
+        System.out.printf("The circumference is %.3f%n", circumference);
     }
+    
 }

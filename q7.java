@@ -1,24 +1,15 @@
-package Tutorial1;
-
-import java.util.Random;
+import java.util.Scanner;
 
 public class q7 {
     public static void main(String[] args) {
-        Random rand = new Random();
-        int odd = 0, even = 0;
+        Scanner input = new Scanner(System.in);
 
-        System.out.print("Numbers: ");
-        for (int counter = 0; counter < 10; counter++) {
-            int num = 10 + rand.nextInt(91); 
-            System.out.print(" " + num);
-            if (num % 2 == 0) {
-                even++;
-            } else {
-                odd++;
-            }
-        }
-        System.out.println();
-        System.out.println("Odd numbers: " + odd);
-        System.out.println("Even numbers: " + even);
+        System.out.print("Enter the length in inches: ");
+        double inches = input.nextDouble();
+
+        double meters = inches * 2.54 / 100;
+
+        System.out.printf("The length in meters is %.2f%n", meters);
+
     }
 }

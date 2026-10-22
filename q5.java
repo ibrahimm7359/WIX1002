@@ -1,14 +1,29 @@
-package Tutorial1;
+import java.util.Scanner;
+
 public class q5 {
     public static void main(String[] args) {
+        //a.
+        double amount = 32.5;
+        amount += 10;
+        System.out.println("The amount is " + amount);
 
-        double width, length, area;
+        //b. 
+        String chapter = "Summary";
+        System.out.println(chapter);
 
-        width = 5.5;
-        length = 2.5;
+        //c.
+        int num = 0;
+        num++;
+        int num1 = num;
 
-        area = width * length;  
+        //d.
+        int numm = 3000;
+        System.out.printf("%d%n", numm);
 
-        System.out.println("Area of the rectangle: " + area);
+        //e.
+        Scanner keyboard = new Scanner(System.in);
+        String contact = keyboard.nextLine();
+
+        System.out.println("Contact: " + contact);
     }
 }
